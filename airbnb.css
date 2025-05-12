@@ -1,0 +1,567 @@
+@font-face {
+    font-family: 'airbnb--black' ;
+    src: url('./assets/fonts/AirbnbCerealBlack.ttf');
+}
+@font-face {
+    font-family: 'airbnb--light';
+    src: url('./assets/fonts/AirbnbCerealLight.ttf');
+}
+@font-face {
+    font-family: 'airbnb--bold';
+    src: url('./assets/fonts/AirbnbCerealBold.ttf');
+}
+@font-face {
+    font-family: 'airbnb--extra';
+    src: url('./assets/fonts/AirbnbCerealExtraBold.ttf');
+}
+
+body{
+    margin: 0;
+    padding: 0;
+}
+
+.fundo{
+    height: 560px;
+    background-image: url(assets/images/ddc7f01f-3fb3-483c-87e6-701dad52c930.avif);
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: bottom;
+}
+.topo{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    height: 60px;
+    background-color:#222222;
+}
+
+.topo--texto{
+    color: #afa9a9;
+    cursor: pointer;
+    text-decoration: underline;
+    font-family: 'airbnb--light';
+    font-size: 18px;
+}
+.topo--texto:hover{
+    color: #898989;
+}
+.menu{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    height: 80px;
+    
+}
+
+.menu--flex{
+    flex: 1;
+}
+.logo{
+    margin-left: 80px;
+    cursor: pointer;
+}
+.menus{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+.item--menu{
+    font-family: 'airbnb--light';
+    cursor: pointer;
+}
+.last--menu--item{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+   }
+
+.menu--button{
+    background: transparent;
+    color: #222222;
+    font-family: 'airbnb--light';
+    font-size: 15px;
+    font-weight: 600;
+    padding: 12px 15px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+}
+.menu--button:hover{
+    background: #f7f7f7;
+}
+.menu--icon{
+    border: 0;
+    padding: 10px;
+    border-radius: 50%;
+    background: transparent;
+    color: #222222;
+    cursor: pointer;
+}
+.menu--icon:hover{
+    background: #f7f7f7;
+}
+.icon--globe{
+    font-size: 10px;
+}
+
+.button--icons{
+    background: white;
+    color: grey;
+    font-size: 14px;
+    font-weight: 600;
+    padding: 10px 10px;
+    border: 0;
+    border-radius: 25px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+}
+
+.icon--button--menu{
+    margin-left: 5px;
+}
+.icon--button--conta{
+    margin-right: 5px;
+    margin-left: 5px;
+}
+
+.buscas{
+    height: 70px;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+.div--buscar{
+    height: 100%;
+    width: 65%;
+    background: white;
+    border: 0;
+    border-radius: 45px;
+    display: flex;
+    align-items: center;
+}
+.item--buscar--1{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+
+}
+
+.item--buscar{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+
+
+.item--buscar--4{
+    flex: 2;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+    
+}
+.buscar--1{
+    margin-left: 30px;
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+}
+.primeiro--item--burcar--1{
+    font-size: 18px;
+    font-family: 'airbnb--light';
+    font-weight: 600;
+}
+.segundo--item--burcar--1{
+    color: grey;
+    font-family: 'airbnb--light';
+    font-size: 15px;
+    font-weight: 400;
+}
+
+/* COMENTADO POIS SERVIU APENAS PARA DEMOSTRAR 
+O SEPARADOR QUE SERA FEITO EM JAVASCRIPT */
+
+/* .separator{
+    position: absolute;
+    height: 42px;
+    width: 2px;
+    background: rgb(175, 172, 172);
+    margin-left: 270px;
+}
+.separator--2{
+    position: absolute;
+    height: 42px;
+    width: 2px;
+    background: rgb(175, 172, 172);
+    margin-left: 150px;
+}
+.separator--3{
+    position: absolute;
+    height: 42px;
+    width: 2px;
+    background: rgb(175, 172, 172);
+    margin-left: 150px; 
+}*/
+.button--buscar{
+    background: #ff385c;
+    border: 0;
+    outline: 0;
+    border-radius: 50%;
+    padding: 10px;
+    width: 50px;
+    height: 50px;
+    color: white;
+    margin-right: 10px;
+    cursor: pointer;
+}
+.button--buscar:hover{
+    background: #e41d5d;
+    
+}
+.itens--4{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.buscar--2{
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-end;
+    
+}
+.botao--buscar{
+    flex: 1;
+}
+
+.natureza{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    /* align-items: flex-start; */
+    padding: 80px;
+}
+.o--melhor{
+    font-size: 60px;
+    font-family: 'airbnb--bold';
+    color: #222222;
+}
+.o--melhor--2{
+    font-size: 60px;
+    font-family: 'airbnb--bold';
+    color: #222222;
+    margin-top: -20px;
+}
+.sugestoes{
+    font-size: 20px;
+    font-family: 'airbnb--light';
+    margin-top: -3px;
+}
+.inspire{
+    padding: 8px 10px;
+    border: 0;
+    border-radius: 10px;
+    background: #222222;
+    color: white;
+    font-family: 'airbnb--bold';
+    width: 100px;
+    font-size: 14px;
+    cursor: pointer;
+}
+.explore{
+    margin-left: 80px;
+    font-family: 'airbnb-bold';
+    font-size: 35px;
+    font-weight: 600;
+    color: #222222;
+}
+.locais{
+    height: 80px;
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+}
+.locais--2{
+    height: 80px;
+    padding: 10px 80px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: -10px;
+}
+
+.local--item{
+    flex: 1;
+    display: flex;
+    cursor: pointer;
+}
+.imagem--local{
+    flex: 1;
+}
+.textos--local{
+    flex: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    
+    
+}
+
+.textos--local b{
+    font-family: 'airbnb--bold';
+    color: #222222;
+    font-size: 16px;   
+    margin-left: 5px; 
+}
+.textos--local p{
+    font-family: 'airbnb--light';
+    color: #222222;
+    font-size: 15px;    
+    font-weight: 600;
+    margin-top: 2px;
+    margin-left: 5px;
+}
+
+.img--local{
+    border-radius: 10px;
+    width: 100%;
+    max-width: 65px;
+    
+}
+
+
+.lugares{
+    /* height: 310px; */
+    padding: 10px 80px;
+
+    max-width: 100%;
+    height: auto;
+
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    margin-top: 10px;
+    gap: 10px;
+}
+.lugar--item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    cursor: pointer;
+}
+/* ++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++ */
+/* PADRAO BOM PARA IMAGENS */
+.lugar--item img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+
+.lugar--item p{
+    font-family: 'airbnb--bold';
+    color: #222222;
+    font-size: 15px;
+    margin-top: 7px;
+}
+
+.hospedar{
+    padding: 10px 80px;
+    
+}
+
+/* BONS ATRIBUTOS PARA IMAGEM DE FUNDO+++++++++++++++++++++++++++++++++++++ */
+.imagem--hospedar{
+    background-image: url(assets/images/become-a-host.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: bottom;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 12px; 
+}
+
+.imagem--hospedar b{
+    color: white;
+    margin-left: 80px;
+    font-family: 'airbnb--light';
+    font-weight: 500;
+    font-size: 17px;
+    
+
+}
+
+.p--1{
+    font-size: 45px;
+    color: #f7f7f7;
+    margin-left: 80px;
+    margin-top: -10px;
+    font-family: 'airbnb--bold';
+}
+.p--2{
+    font-size: 45px;
+    color: #f7f7f7;
+    margin-left: 80px;
+    margin-top: -50px;
+    font-family: 'airbnb--bold';
+}
+.b{
+    display: flex;
+    flex-direction: column;
+    margin-top: -40px;
+}
+
+.imagem--hospedar button{
+    color: #222222;
+    background: white;
+    border: 0;
+    padding: 12px 20px;
+    font-family: 'airbnb--bold';
+    font-size: 15px;
+    width: 125px;
+    margin-left: 80px;
+    border-radius: 12px;
+    cursor: pointer;
+}
+
+.atividades{
+    font-size: 20px;
+    font-family: 'airbnb--light';
+    color: #222222;
+    font-weight: 600;
+    margin-left: 80px;
+    margin-top: -30px;
+}
+
+.todo--atividades{
+    padding: 10px 80px;
+    height: 450px;
+    display: flex;
+    gap: 10px;
+}
+.atividade--item{
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    border-radius: 12px;
+    cursor: pointer;
+}
+.atividade--item img{
+    max-width: 100%;
+    height: auto;
+    aspect-ratio: 1 / 1;
+    object-fit: cover;
+    border-radius: 15px;
+}
+.atividade--item b{
+    font-size: 17px;
+    font-family: 'airbnb--bold';
+    color: #222222;
+    margin-top: 10px;
+}
+
+.atividade--item p{
+    font-size: 15px;
+    font-family: 'airbnb--light';
+    color: #7e7b7b;
+    font-weight: 600;
+    margin-top: 2px;
+}
+
+.footer{
+    height: 540px;
+    padding: 45px 80px;
+    background: #f7f7f7;
+    border-top: 1px solid #a8a6a6;
+
+}
+.menus--footer{
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+
+}
+.item--footer{
+    flex: 1;
+}
+.item--footer b{
+    font-family: 'airbnb--bold';
+    color: #3e2222;
+    font-size: 15px;
+    font-weight: 500;
+    cursor: pointer;
+}
+.item--footer p{
+    font-family: 'airbnb--light';
+    color: rgb(117, 115, 115);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.item--footer p{
+    font-family: 'airbnb--light';
+    color: rgb(117, 115, 115);
+    font-size: 15px;
+    cursor: pointer;
+}
+
+.footer--end{
+    border-top: 1px solid #cac7c7;
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.footer--1{
+    display: flex;
+    align-items: flex-start;
+    justify-content: center;
+    flex: 1;
+}
+.footer--1 p{
+    font-family: 'airbnb--light';
+    color: #a5a1a1;;
+
+}
+
+.footer--2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex: 1;
+    font-family: 'airbnb--light';
+    color: #8a8585;;;
+    font-size: 15px;
+}
+.footer--2 b{
+    margin-left: 5px;
+}
+.email{
+    margin-left: 10px;
+    cursor: pointer;
+}
+.globe--footer{
+    margin-right: 5px;
+    cursor: pointer;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
